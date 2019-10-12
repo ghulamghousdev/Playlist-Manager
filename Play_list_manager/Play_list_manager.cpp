@@ -97,11 +97,11 @@ bool Menu(playlist& play_list)
       break;
 
     //case to delete song
-	case 'D':
+    case 'D':
       DoDelete(play_list);
       break;
 
-	//case to play songs
+    //case to play songs
     case 'P':
       play_list.play(2);
       break;
