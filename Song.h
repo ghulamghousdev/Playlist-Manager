@@ -1,4 +1,3 @@
-
 #ifndef SONG_H
 #define SONG_H
 
@@ -14,22 +13,22 @@ class Song
 {
 	// output the song in the format:
 	// title, artist
-	friend ostream& operator<<(ostream& os, const Song& song);
+	friend ostream &operator<<(ostream &os, const Song &song);
 
 	// input the song in the format:
 	// title, artist
-	friend istream& operator>>(istream& is, Song& song);
+	friend istream &operator>>(istream &is, Song &song);
 
 	// compare two song objects for equality
-	friend bool operator==(const Song& lhs, const Song& rhs);
+	friend bool operator==(const Song &lhs, const Song &rhs);
 
 public:
 	// constructors
 	Song();
-	Song(const char* t, const char* a);
+	Song(const char *t, const char *a);
 
 	// set the song
-	void Set(const char* t, const char* a);
+	void Set(const char *t, const char *a);
 
 private:
 	static const int MAX_CHARS = 64;

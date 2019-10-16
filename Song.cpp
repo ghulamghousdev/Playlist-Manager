@@ -1,5 +1,3 @@
-
-#include "pch.h"
 #include <iostream>
 #include "song.h"
 #include <cstring>
@@ -19,12 +17,12 @@ Song::Song()
 	strcpy_s(artist, "");
 }
 
-Song::Song(const char* t, const char* a)
+Song::Song(const char *t, const char *a)
 {
 	Set(t, a);
 }
 
-void Song::Set(const char* t, const char* a)
+void Song::Set(const char *t, const char *a)
 {
 	if (strlen(t) < MAX_CHARS)
 		strcpy_s(title, t);
@@ -34,7 +32,7 @@ void Song::Set(const char* t, const char* a)
 }
 
 // output operator
-ostream& operator<<(ostream& os, const Song& song)
+ostream &operator<<(ostream &os, const Song &song)
 {
 	os << song.title << ", " << song.artist;
 
@@ -42,7 +40,7 @@ ostream& operator<<(ostream& os, const Song& song)
 }
 
 // input operator
-istream& operator>>(istream& is, Song& song)
+istream &operator>>(istream &is, Song &song)
 {
 	// ignore any newlines
 	IgnoreNewLines();
@@ -64,7 +62,7 @@ istream& operator>>(istream& is, Song& song)
 }
 
 // equality test operator
-bool operator==(const Song& lhs, const Song& rhs)
+bool operator==(const Song &lhs, const Song &rhs)
 {
 	if (strcmp(lhs.title, rhs.title))
 		return false;
