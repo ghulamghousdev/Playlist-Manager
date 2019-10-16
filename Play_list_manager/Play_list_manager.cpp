@@ -39,7 +39,7 @@ void DoDelete(playlist& s1)
   s1.ShowStatus();
 }
 
-//function to add song by addition operator
+
 void Add_by_Addition_operator(playlist list)
 {
 	Song s;
