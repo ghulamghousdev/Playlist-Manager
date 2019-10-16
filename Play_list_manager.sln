@@ -1,5 +1,5 @@
 ﻿
- 
+ //code for the music player
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.438
@@ -12,7 +12,8 @@ Global
 		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
+//characteristics about the program
+EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E263C234-688F-4B8F-9FBF-25CFE7377EC7}.Debug|x64.ActiveCfg = Debug|x64
 		{E263C234-688F-4B8F-9FBF-25CFE7377EC7}.Debug|x64.Build.0 = Debug|x64
