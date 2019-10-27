@@ -4,7 +4,6 @@
 
 using namespace std;
 
-//default constructor
 playlist::playlist()
 {
 	//setting size of array to 2
