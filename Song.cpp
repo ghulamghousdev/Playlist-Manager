@@ -44,8 +44,6 @@ istream &operator>>(istream &is, Song &song)
 {
 	// ignore any newlines
 	IgnoreNewLines();
-
-	// read until the comma
 	cin.getline(song.title, Song::MAX_CHARS, ',');
 
 	// ignore the space in between
