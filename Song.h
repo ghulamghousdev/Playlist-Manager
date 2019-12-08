@@ -7,6 +7,7 @@ using namespace std;
 
 using namespace std;
 
+
 // Song is a simple class that stores a title and artist as strings
 // it just provides i/o operators, == operator, constructors and Set function
 class Song
